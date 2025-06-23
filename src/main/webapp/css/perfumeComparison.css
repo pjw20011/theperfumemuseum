@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.comparison {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.perfume {
+    width: 300px;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.perfume img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.perfume h2, .perfume p {
+    text-align: center;
+}
+
+.form-container select {
+    width: 350px; /* Increase the width to accommodate the image and text */
+    padding: 10px; /* Increase padding for better appearance */
+}
+
+.select2-container--default .select2-selection--single {
+    height: 60px; /* Increase height for better alignment */
+    display: flex;
+    align-items: center;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Ensure that overflow is hidden */
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered img {
+    width: 40px; /* Adjust image size if necessary */
+    height: auto;
+    margin-right: 10px;
+}

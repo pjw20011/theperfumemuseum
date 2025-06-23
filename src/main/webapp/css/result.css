@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.result-container {
+	margin-top:140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfume-recommendation {
+    margin-bottom: 20px;
+}
+
+.perfume-recommendation.large {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.perfume-recommendation.large img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.perfume-recommendation.large h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.perfume-recommendation.large p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.other-recommendations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.perfume-recommendation.small {
+    width: 20%;
+    margin: 10px;
+}
+
+.perfume-recommendation.small img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.perfume-recommendation.small h3 {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.perfume-recommendation.small p {
+    font-size: 12px;
+    margin: 5px 0;
+}

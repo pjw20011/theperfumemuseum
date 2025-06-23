@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 160px;
+    background-color: #f9f9f9;
+}
+
+a{
+	color: black;
+}
+
+/* 활동 내역*/
+.activity-details{
+	width: 300px;
+}
+.activity-details-title{
+	display: inline-block;
+	width: 120px;
+}
+
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    width: 200px;
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.user-info {
+    margin-bottom: 20px;
+}
+
+.user-info p {
+    margin: 5px 0;
+}
+
+.points {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.section-content {
+    margin-top: 20px;
+}
+
+.section-content h2 {
+    margin-top: 0;
+}
+
+
+/* 순서 태그*/
+.add span{
+	position: absolute;
+}
+.sort-select {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    right: 40px;
+}
+
+.sort-select select {
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.post-list, .comment-list, .like-list{
+    height: 330px;
+    overflow-y: scroll;
+}
+
+.post-list::-webkit-scrollbar{
+	display: none;
+}
+
+.comment-list::-webkit-scrollbar{
+	display: none;
+}
+
+.like-list::-webkit-scrollbar{
+	display: none;
+}
+
+.post-item, .comment-item, .like-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-item:hover, .comment-item:hover, .like-item:hover{
+	border: 1px solid black;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-item h3, .comment-item h3, .like-item h3 {
+    margin: 0;
+}
+
+.post-item p, .comment-item p, .like-item p {
+    margin: 0;
+    color: #777;
+}
+
+.post-actions, .comment-actions, .like-actions {
+    display: flex;
+    align-items: center;
+}
+
+.post-actions span, .comment-actions span, .like-actions span {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.post-actions img, .comment-actions img, .like-actions img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+/*회원정보 수정 설정*/
+.user-info-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+.user-info-form label {
+    margin-top: 10px;
+}
+.user-info-form input[type="text"], .user-info-form input[type="password"], .user-info-form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+.user-info-form button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#profileImageInput{
+	display: none;
+}
+
+.user-info-form .profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.user-info-form .profile-section img {
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+
+/* 비밀번호 변경 */
+.username-error{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#password-strength2 {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #000;
+}
+
+.password-check {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
